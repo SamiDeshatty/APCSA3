@@ -26,7 +26,7 @@ for (Map.Entry<Integer, Menu> entry : menu.entrySet()){
 ```
 Try-Catch used to run tasks based on user input. Catch used to print message if user inputs a Integer not included as a key in the HashMap
 ```
-//Using try-catch to run programs. 
+//Using try-catch to run programs
 //Input acts as the key and the value that comes from the HashMap is the program that is run
 int input = sc.nextInt();
 try{
