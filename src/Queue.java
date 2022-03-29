@@ -4,7 +4,7 @@ import java.util.Iterator;
 
 /**
  * Queue: custom implementation
- * @author John Mortensen, Kaavya Uppala
+ * @author John Mortensen, Sameeksha Deshatty
  *
  * 1. Uses custom LinkedList of Generic type T
  * 2. Implements Iterable
