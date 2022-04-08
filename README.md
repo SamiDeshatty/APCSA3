@@ -1,34 +1,52 @@
-## Replit Link
-[Sami Individual Repl](https://replit.com/@SamiDeshatty/APCSA3#src/Main.java)
+### Data Structures Trimester 3
 
+## [Week 0- Intro to Data Structures](https://github.com/nighthawkcoders/nighthawk_csa/wiki/Tri-3:-Tech-Talk-0---Data-Structures)
 
+# What is Data Structures? 
+- A data structure is a method of organizing data. Think of a variable holding a single integer value(ex: int n=4;) or sequences of numbers(ex: int[] numbers=new int[]{ 1,2,3 };) or tables of data, or databases: these are all well-defined data structures. Data Structures and organizing data will require students to become more algorithmic in coding.
+- Together, data structures and algorithms combine and allow programmers to build whatever computer programs they’d like. Well managed data structures and algorithms ensures well-optimized and efficient code.
+
+# Paradigm = A paradigm is an approach or a methodology or a strategy to be followed for writing software applications.
+- Imperative =  imperative programming is a programming paradigm that uses statements that change a program's state. An imperative program consists of commands for the computer to perform to achieve a result. Imperative programming focuses on describing "how" a program code works.
+- Object = Object Oriented programming (OOP) is a programming paradigm that relies on the concept of classes and objects. It is used to structure a software program into simple, reusable pieces of code blueprints (usually called classes), which are used to create individual instances of objects.
+
+# Task Code Examples: 
+
+Menu:
+- Create a HashMap integer that has Integer key and Menu value.
+- Each Menu has a title and task. The task is the program that will be run (main methods of other classes)
+```
+        Map<Integer, Menu> menu = new HashMap<>();
+        menu.put(1, new Menu("IntByReference", () -> IntByReference.main(null)));
+        menu.put(2, new Menu("Matrix", () -> Matrix.main(null)));
+        menu.put(3, new Menu("Queue", () -> QueueTester.main(null)));
+        menu.put(4, new Menu("Reverse Queue", () -> ReverseQueue.main(null)));
+        
  ```
- Calculator simpleMath = new Calculator("100 + 200  * 3");
-        System.out.println("Simple Math\n" + simpleMath);
-
-        // what is simpleMath? simpleMath is an object of the Calculator class
-        // you can do scanner, but that's a seperate option. we want it so that we can calculate testing
-        // consider parenthesis, we want to break down a string of numbers
+ IntByRefernce:
+- Switches values so they are in low to high order
+```
+    public void swapToLowHighOrder (IntByReference b) {
+        if (this.value > b.value){
+            int temp = b.value;
+            b.value = this.value;
+            this.value = temp;
+        }
+    }
+ ```
+ - static method that swaps the numbers by refernce
+ ```
+ public static void swapper(int n0, int n1) {
+        IntByReference a = new IntByReference(n0);
+        IntByReference b = new IntByReference(n1);
+        System.out.println("Before: "+ a.toString(b));
+        a.swapToLowHighOrder(b);  
+        System.out.println("After: " + a.toString(b));
         System.out.println();
+    }
+ ```
+ Runtime: ![image](https://user-images.githubusercontent.com/43257337/162393472-ead4cb5c-5014-4d3d-a221-50a754a01eb1.png)
 
-        Calculator parenthesisMath = new Calculator("(100 + 200)  * 3"); // The stuff in the parenthesis is a token
-        System.out.println("Parenthesis Math\n" + parenthesisMath);
+ 
+ 
 
-        //
-  ```
-  
-  
-    // 1. get the notations
-    // 2. split the token
-    // 3. tokenize the expression
-    // 4. reverse polish notation
-    // this splits by number and operator. if its an operator, it goes into one array. if its a number, that's a seperate array.
-    // you also need to set an order of precedence. for example, * is above +.
-    // when you're order of precedence, you're just popping the stack
-    // the first operator will take two guys off of the stack, and then calculate. two of the tokens go out.
-    // then the new number and the other operator work on the next in the stack, and we have a new number.
-    // if that stack has nothing left, it will return the current number.
-    // 5. rpn result on the result of the above
-    // what rpn does is convert everything into tokens
-    // we're passing in a string
-    // we tokenize by number, sign and operation
