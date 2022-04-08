@@ -176,7 +176,7 @@ public class Calculator {
                 case "^": // power
                 case "?": // sqrt
 
-                    while (tokenStack.size() > 0 && tokenStack.peek() != null && isOperator((String) tokenStack.peek()))
+                    while (tokenStack.peek() != null && isOperator((String) tokenStack.peek()))
                     {
                         if ( isPrecedent(token, (String) tokenStack.peek() )) {
                             reverse_polish.add((String)tokenStack.pop());
@@ -192,7 +192,7 @@ public class Calculator {
             }
         }
 
-        while (tokenStack.size() > 0 && tokenStack.peek() != null) {
+        while (tokenStack.peek() != null) {
             reverse_polish.add((String)tokenStack.pop());
         }
 
