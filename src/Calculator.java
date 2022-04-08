@@ -14,8 +14,6 @@ import java.lang.Math;
 // this is used by importing the stacks function from the stack code
 
 
-
-
 public class Calculator {
 
     private final String expression;
@@ -168,7 +166,7 @@ public class Calculator {
                     }
                     tokenStack.pop();
                     break;
-                // we're going to push stuff into the stack, and that's going to cause thing sto go out of the stack.
+                // we're going to push stuff into the stack, and that's going to cause things to go out of the stack.
                 //helps parenthesis. remember PEMDAS
                 case "+":
                 case "-":
@@ -178,7 +176,7 @@ public class Calculator {
                 case "^": // power
                 case "?": // sqrt
 
-                    while (tokenStack.peek() != null && isOperator((String) tokenStack.peek()))
+                    while (tokenStack.size() > 0 && tokenStack.peek() != null && isOperator((String) tokenStack.peek()))
                     {
                         if ( isPrecedent(token, (String) tokenStack.peek() )) {
                             reverse_polish.add((String)tokenStack.pop());
@@ -194,7 +192,7 @@ public class Calculator {
             }
         }
 
-        while (tokenStack.peek() != null) {
+        while (tokenStack.size() > 0 && tokenStack.peek() != null) {
             reverse_polish.add((String)tokenStack.pop());
         }
 
@@ -271,7 +269,7 @@ public class Calculator {
         System.out.println("Simple Math\n" + simpleMath);
 
         // what is simpleMath? simpleMath is an object of the Calculator class
-        // you can do scanner, but that's a seperate option. we want it so that we can calculate testing
+        // you can do scanner, but that's a separate option. we want it so that we can calculate testing
         // consider parenthesis, we want to break down a string of numbers
         System.out.println();
 

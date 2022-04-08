@@ -1,3 +1,4 @@
+/*
 package src;
 
 class Main {
@@ -5,3 +6,4 @@ class Main {
     Menu.main(null);
   }
 }
+ */
