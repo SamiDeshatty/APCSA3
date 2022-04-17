@@ -32,8 +32,8 @@ public class Menu {
         menu.put(3, new Menu("Queue", () -> QueueTester.main(null)));
         menu.put(4, new Menu("Reverse Queue", () -> ReverseQueue.main(null)));
         menu.put(5, new Menu("Calculator", () -> Calculator.main(null)));
-
-        //Printing the menu by iterating though HashMap menu
+        menu.put(6, new Menu("Sorts", () -> Sorts.main(null)));   
+          //Printing the menu by iterating though HashMap menu
         System.out.println("Please select a program to run:");
         for (Map.Entry<Integer, Menu> entry : menu.entrySet()){
             System.out.println(entry.getKey() + " --> " + entry.getValue().getTitle());
