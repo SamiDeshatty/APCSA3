@@ -1,3 +1,22 @@
+### AP EXAM PREP 
+## WEEK 1: STUDY PLAN
+
+- Monday: In class ~ Make review plan for next two weeks. At home ~ Unit 1 collegeboard practice (videos, quizzes, progress checks)
+- Tuesday: In class ~ 40 question MCQ exam. At home ~ Unit 2 collegeboard
+- Wednesday: In class + at home ~ Unit 3 collegeboard and MCQ corrections
+- Thursday: In class ~ 4 question FRQ exam. At home ~ Unit 4 collegeboard
+- Friday: In class + at home ~ Unit 5 collegeboard 
+
+## WEEK 2: STUDY PLAN
+
+- Monday: In class + At home ~ Unit 6 collegeboard practice (videos, quizzes, progress checks)
+- Tuesday: In class ~ 40 question MCQ exam. At home ~ Unit 7 collegeboard
+- Wednesday: In class + at home ~ Unit 8 collegeboard and MCQ corrections
+- Thursday: In class ~ 4 question FRQ exam. At home ~ Unit 9 collegeboard
+- Friday: In class + at home ~ Unit 10 collegeboard 
+- Weekend: Take one full length practice test each day plus review individual study guide on Monday and Tuesday of next week.
+
+
 ### Data Structures Trimester 3
 
 ## [Week 0- Intro to Data Structures](https://github.com/nighthawkcoders/nighthawk_csa/wiki/Tri-3:-Tech-Talk-0---Data-Structures)
